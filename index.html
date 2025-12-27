@@ -3,172 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOAXLEGACY</title>
-    <style>
-        /* Reset & Basic Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #0e0e0e;
-            color: #fff;
-            line-height: 1.6;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem 3rem;
-            background-color: #111;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        header .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #ff8c00;
-        }
-        nav a {
-            margin-left: 2rem;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: #ff8c00;
-        }
-
-        /* Hero Section */
-        .hero {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            text-align: center;
-            padding: 0 2rem;
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.jpg') no-repeat center center/cover;
-        }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #ff8c00;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            max-width: 600px;
-        }
-        .hero .btn {
-            padding: 0.8rem 2rem;
-            background-color: #ff8c00;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .hero .btn:hover {
-            background-color: #e07b00;
-        }
-
-        /* Features Section */
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 5rem 2rem;
-            background-color: #111;
-        }
-        .feature {
-            flex: 1 1 300px;
-            margin: 1rem;
-            padding: 2rem;
-            background-color: #1a1a1a;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .feature:hover {
-            transform: translateY(-10px);
-        }
-        .feature h3 {
-            color: #ff8c00;
-            margin-bottom: 1rem;
-        }
-        .feature p {
-            font-size: 1rem;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background-color: #111;
-            border-top: 1px solid #222;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.2rem;
-            }
-            .hero p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <title>SHOAXLEGACY | Smart Trading & Web Solutions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header -->
-    <header>
-        <div class="logo">SHOAXLEGACY</div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<header>
+    <div class="logo">SHOAXLEGACY</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#performance">Performance</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h1>Smart Trading, Simplified</h1>
-        <p>Automated trading bots designed for precision, efficiency, and smarter decision-making. Take control of your trading journey with SHOAXLEGACY.</p>
-        <button class="btn">Get Started</button>
-    </section>
+<section class="hero" id="home">
+    <h1>Smart Trading, Simplified</h1>
+    <p>Automated trading bots designed for precision, efficiency, and smarter decision-making.</p>
+    <a href="#contact" class="btn">Get Started</a>
+</section>
 
-    <!-- Features Section -->
-    <section class="features" id="features">
-        <div class="feature">
-            <h3>Automated Strategies</h3>
-            <p>Trade with pre-built, fully automated strategies designed for different market conditions.</p>
+<section class="features" id="features">
+    <div class="feature">
+        <h3>Automated Strategies</h3>
+        <p>Fully automated bots like Shoax-PriceAction v1.7 designed for institutional liquidity grabs.</p>
+    </div>
+    <div class="feature">
+        <h3>Web Development</h3>
+        <p>Professional websites and FinTech dashboards for small businesses and companies.</p>
+    </div>
+    <div class="feature">
+        <h3>Risk Management</h3>
+        <p>Capital protection through intelligent trade control and verified bot logic.</p>
+    </div>
+</section>
+<section class="market-sessions">
+    <h2 class="section-heading">Live Market Status</h2>
+    <div class="sessions-grid">
+        <div class="session-card" id="london-session">
+            <h4>London</h4>
+            <div class="status-indicator"></div>
+            <span class="status-text">Checking...</span>
         </div>
-        <div class="feature">
-            <h3>Risk Management</h3>
-            <p>Protect your capital with intelligent risk settings and stop-loss strategies.</p>
+        <div class="session-card" id="newyork-session">
+            <h4>New York</h4>
+            <div class="status-indicator"></div>
+            <span class="status-text">Checking...</span>
         </div>
-        <div class="feature">
-            <h3>Real-Time Analysis</h3>
-            <p>Monitor market movements and get insights directly from the bot dashboard.</p>
+        <div class="session-card" id="sydney-session">
+            <h4>Sydney</h4>
+            <div class="status-indicator"></div>
+            <span class="status-text">Checking...</span>
         </div>
-    </section>
+        <div class="session-card" id="tokyo-session">
+            <h4>Tokyo</h4>
+            <div class="status-indicator"></div>
+            <span class="status-text">Checking...</span>
+        </div>
+    </div>
+</section>
+<section class="performance" id="performance">
+    <h2 class="section-heading">Verified Results</h2>
+    <div class="gallery-grid">
+        <div class="gallery-card">
+            <img src="backtest-1.jpg" alt="Result 1" onerror="this.src='https://via.placeholder.com/400x250/111/ff8c00?text=Backtest+Result'">
+            <h4>Gold Strategy Win Rate</h4>
+        </div>
+        <div class="gallery-card">
+            <img src="backtest-2.jpg" alt="Result 2" onerror="this.src='https://via.placeholder.com/400x250/111/ff8c00?text=Equity+Curve'">
+            <h4>Consistent Equity Growth</h4>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <p>&copy; 2025 SHOAXLEGACY. All Rights Reserved. Trading involves risk; we are not liable for losses.</p>
-    </footer>
+<section class="contact" id="contact">
+    <h2>Contact SHOAXLEGACY</h2>
+    <div class="contact-container">
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:shoaxlegacy@gmail.com">shoaxlegacy@gmail.com</a></p>
+            <p><strong>Phone:</strong> 068 467 4931 / 071 887 4933</p>
+            <p><strong>Socials:</strong> Homeboy Shoax</p>
+        </div>
 
+        <form id="contactForm" action="https://formspree.io/f/meeqawyq" method="POST">
+            <div class="form-group">
+                <label>Your Email:</label>
+                <input type="email" name="email" placeholder="email@example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Service Required:</label>
+                <select name="service">
+                    <option value="Trading Bot">Trading Robot (EA)</option>
+                    <option value="Web Design">Website Design</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Your Message:</label>
+                <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn" id="submitBtn">Send Inquiry</button>
+            <p id="formStatus"></p>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 SHOAXLEGACY (PTY) LTD. All Rights Reserved.</p>
+    <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.5;">Trading involves risk. SHOAXLEGACY is not liable for losses.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>

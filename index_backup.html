@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOAXLEGACY | FinTech & Web Agency</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary: #ff8c00;
+            --primary-glow: rgba(255, 140, 0, 0.4);
+            --bg: #0a0a0a;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #ffffff;
+            --text-dim: #888888;
+        }
+
+        /* Base Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; } /* Native CSS Smooth Scroll */
+        body { background-color: var(--bg); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+        
+        /* Glassmorphism Utility */
+        .glass { background: var(--card-bg); backdrop-filter: blur(12px); border: 1px solid var(--border); border-radius: 16px; transition: 0.3s ease; }
+
+        /* Buttons */
+        .btn { padding: 0.8rem 2rem; background: var(--primary); color: #000; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; transition: 0.3s; text-decoration: none; display: inline-block; text-align: center; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 0 20px var(--primary-glow); }
+
+        /* Header */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 10%; position: fixed; top: 0; width: 100%; z-index: 1000; background: rgba(10, 10, 10, 0.8); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+        .logo { font-size: 1.5rem; letter-spacing: 2px; font-weight: 900; color: var(--primary); text-decoration: none; }
+        nav a { margin-left: 2rem; color: #ccc; text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: var(--primary); }
+
+        /* Hero */
+        .hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: radial-gradient(circle at center, #1a1a1a 0%, #0a0a0a 100%); padding: 0 5%; }
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 5rem); margin-bottom: 1rem; background: linear-gradient(to right, #fff, var(--primary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tag { background: var(--primary); color: #000; font-size: 0.7rem; padding: 4px 12px; border-radius: 20px; font-weight: 900; text-transform: uppercase; margin-bottom: 1rem; }
+
+        /* Sections */
+        section { padding: 100px 10%; }
+        .section-title { text-align: center; margin-bottom: 3rem; font-size: 2.5rem; color: var(--primary); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+
+        /* Performance Gallery Styles */
+        .backtest-img { width: 100%; border-radius: 8px; margin-bottom: 1rem; cursor: pointer; border: 1px solid transparent; }
+        .backtest-img:hover { border-color: var(--primary); }
+
+        /* Form Styling */
+        form input, form select, form textarea { width: 100%; padding: 1rem; background: #151515; border: 1px solid #333; color: white; border-radius: 8px; margin-bottom: 1.2rem; outline: none; transition: 0.3s; }
+        form input:focus, form textarea:focus { border-color: var(--primary); box-shadow: 0 0 10px rgba(255, 140, 0, 0.2); }
+
+        footer { padding: 3rem; text-align: center; border-top: 1px solid var(--border); color: #666; font-size: 0.8rem; }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) { nav { display: none; } .hero h1 { font-size: 3rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">SHOAXLEGACY</a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#trading">Trading Bots</a>
+            <a href="#performance">Performance</a>
+            <a href="#order">Order Now</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="tag">PTY (LTD) Registered</div>
+        <h1>Your Vision,<br>Automated.</h1>
+        <p style="color: var(--text-dim); max-width: 600px; margin-bottom: 2rem;">
+            We build elite trading robots and high-performance websites. Automate your wealth and establish your digital legacy with SHOAXLEGACY.
+        </p>
+        <a href="#order" class="btn">Get Started</a>
+    </section>
+
+    <section id="trading">
+        <h2 class="section-title">Trading Robots (EAs)</h2>
+        <div class="grid">
+            <div class="glass" style="padding: 2rem;">
+                <span class="tag">Flagship</span>
+                <h3 style="margin-top: 1rem;">Shoax-PriceAction v1.7</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem; margin: 1rem 0;">A sophisticated MT5 bot using Order Blocks and Liquidity Sweeps to find high-probability entries.</p>
+                <button class="btn" style="width: 100%;" onclick="location.href='#performance'">View Stats</button>
+            </div>
+            <div class="glass" style="padding: 2rem;">
+                <span class="tag">Scaling</span>
+                <h3 style="margin-top: 1rem;">Web Development</h3>
+                <p style="color: var(--text-dim); font-size: 0.9rem; margin: 1rem 0;">Custom business websites, landing pages, and Fintech dashboards tailored for small businesses.</p>
+                <button class="btn" style="width: 100%; background: none; border: 1px solid var(--primary); color: var(--primary);">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="performance" style="background: #0f0f0f;">
+        <h2 class="section-title">Verified Results</h2>
+        <div class="grid">
+            <div class="glass" style="padding: 1.5rem;">
+                <img src="backtest-1.jpg" alt="Backtest 1" class="backtest-img" onerror="this.src='https://via.placeholder.com/400x250/111/ff8c00?text=Backtest+Result+1'">
+                <h4>Gold H1 Win Rate</h4>
+                <p style="color: var(--text-dim); font-size: 0.8rem;">90%+ Success in 2024 Market Conditions.</p>
+            </div>
+            <div class="glass" style="padding: 1.5rem;">
+                <img src="backtest-2.jpg" alt="Backtest 2" class="backtest-img" onerror="this.src='https://via.placeholder.com/400x250/111/ff8c00?text=Equity+Curve+2'">
+                <h4>Equity Curve Growth</h4>
+                <p style="color: var(--text-dim); font-size: 0.8rem;">Consistent growth with minimal drawdown.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="glass" style="max-width: 800px; margin: 0 auto; padding: 3rem;">
+            <h2 style="color: var(--primary); margin-bottom: 0.5rem;">Start Your Legacy</h2>
+            <p style="color: var(--text-dim); margin-bottom: 2rem;">Fill in your details and we will contact you within 24 hours.</p>
+            
+            <form id="legacyForm" action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                
+                <select name="service" required>
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="buy-ea">Purchase EA (v1.7)</option>
+                    <option value="custom-dev">Custom EA Development</option>
+                    <option value="website">Web Design Project</option>
+                </select>
+                
+                <textarea name="message" rows="5" placeholder="Your requirements..."></textarea>
+                
+                <button type="submit" class="btn" style="width: 100%;">Send Inquiry</button>
+            </form>
+            <p id="formStatus" style="text-align: center; margin-top: 1rem; display: none;"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SHOAXLEGACY (PTY) LTD. All Rights Reserved.</p>
+        <p style="margin-top: 10px; color: #444; font-size: 0.7rem;">Trading involves risk. We provide tools, not financial advice.</p>
+    </footer>
+
+    <script>
+        // 1. Smooth Scroll Handling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 2. Simple Form Handling (Prevents page reload and shows status)
+        const form = document.getElementById('legacyForm');
+        const status = document.getElementById('formStatus');
+
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const data = new FormData(e.target);
+            
+            // Note: Replace 'YOUR_ID_HERE' with your real Formspree ID
+            const response = await fetch(form.action, {
+                method: 'POST',
+                body: data,
+                headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+                status.innerHTML = "✅ Success! We'll be in touch soon.";
+                status.style.display = "block";
+                status.style.color = "#00ff00";
+                form.reset();
+            } else {
+                status.innerHTML = "❌ Oops! Something went wrong.";
+                status.style.display = "block";
+                status.style.color = "#ff0000";
+            }
+        };
+    </script>
+</body>
+</html>
