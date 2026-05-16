@@ -1,122 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOAXLEGACY | Smart Trading & Web Solutions</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOAXLEGACY | Tech & Supplier Solutions</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+<!-- ================= HEADER ================= -->
 <header>
     <div class="logo">SHOAXLEGACY</div>
+
     <nav>
         <a href="#home">Home</a>
-        <a href="#features">Features</a>
-        <a href="#performance">Performance</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
         <a href="#contact">Contact</a>
     </nav>
+
+    <div class="menu-toggle" id="menuToggle">
+        ☰
+    </div>
 </header>
 
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- ================= HERO ================= -->
 <section class="hero" id="home">
-    <h1>Smart Trading, Simplified</h1>
-    <p>Automated trading bots designed for precision, efficiency, and smarter decision-making.</p>
-    <a href="#contact" class="btn">Get Started</a>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <p class="hero-mini">SHOAXLEGACY (PTY) LTD</p>
+
+        <h1>
+            Smart Tech <span>Solutions</span><br>
+            For Modern Businesses
+        </h1>
+
+        <p class="hero-text">
+            We build modern websites, digital platforms and provide reliable supplier solutions
+            for businesses across South Africa.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#contact" class="btn primary-btn">Get Started</a>
+            <a href="#services" class="btn secondary-btn">Our Services</a>
+        </div>
+    </div>
+
 </section>
 
-<section class="features" id="features">
-    <div class="feature">
-        <h3>Automated Strategies</h3>
-        <p>Fully automated bots like Shoax-PriceAction v1.7 designed for institutional liquidity grabs.</p>
+<!-- ================= ABOUT ================= -->
+<section class="about" id="about">
+
+    <div class="section-title">
+        <h2>About SHOAXLEGACY</h2>
+        <div class="line"></div>
     </div>
-    <div class="feature">
-        <h3>Web Development</h3>
-        <p>Professional websites and FinTech dashboards for small businesses and companies.</p>
+
+    <div class="about-container">
+
+        <div class="about-card">
+            <h3>Tech Solutions</h3>
+            <p>
+                We create professional websites, business systems,
+                landing pages and digital platforms built for growth.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Supplier Solutions</h3>
+            <p>
+                SHOAXLEGACY also operates as a registered supplier,
+                helping businesses source products and equipment efficiently.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <h3>Professional Brand</h3>
+            <p>
+                Registered company and CSD compliant, focused on quality,
+                innovation and long-term partnerships.
+            </p>
+        </div>
+
     </div>
-    <div class="feature">
-        <h3>Risk Management</h3>
-        <p>Capital protection through intelligent trade control and verified bot logic.</p>
-    </div>
-</section>
-<section class="market-sessions">
-    <h2 class="section-heading">Live Market Status</h2>
-    <div class="sessions-grid">
-        <div class="session-card" id="london-session">
-            <h4>London</h4>
-            <div class="status-indicator"></div>
-            <span class="status-text">Checking...</span>
-        </div>
-        <div class="session-card" id="newyork-session">
-            <h4>New York</h4>
-            <div class="status-indicator"></div>
-            <span class="status-text">Checking...</span>
-        </div>
-        <div class="session-card" id="sydney-session">
-            <h4>Sydney</h4>
-            <div class="status-indicator"></div>
-            <span class="status-text">Checking...</span>
-        </div>
-        <div class="session-card" id="tokyo-session">
-            <h4>Tokyo</h4>
-            <div class="status-indicator"></div>
-            <span class="status-text">Checking...</span>
-        </div>
-    </div>
-</section>
-<section class="performance" id="performance">
-    <h2 class="section-heading">Verified Results</h2>
-    <div class="gallery-grid">
-        <div class="gallery-card">
-            <img src="backtest-1.jpg" alt="Result 1" onerror="this.src='https://via.placeholder.com/400x250/111/ff8c00?text=Backtest+Result'">
-            <h4>Gold Strategy Win Rate</h4>
-        </div>
-        <div class="gallery-card">
-            <img src="backtest-2.jpg" alt="Result 2" onerror="this.src='https://via.placeholder.com/400x250/111/ff8c00?text=Equity+Curve'">
-            <h4>Consistent Equity Growth</h4>
-        </div>
-    </div>
+
 </section>
 
+<!-- ================= SERVICES ================= -->
+<section class="services" id="services">
+
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <div class="line"></div>
+    </div>
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+
+            <h3>Website Development</h3>
+
+            <p>
+                Modern responsive websites for businesses,
+                portfolios, startups and brands.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">⚡</div>
+
+            <h3>Business Solutions</h3>
+
+            <p>
+                Digital systems and smart technology solutions
+                designed to improve workflow and efficiency.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📦</div>
+
+            <h3>Supplier Services</h3>
+
+            <p>
+                Reliable sourcing and supply solutions
+                for products, equipment and business needs.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
 <section class="contact" id="contact">
-    <h2>Contact SHOAXLEGACY</h2>
+
+    <div class="section-title">
+        <h2>Contact Us</h2>
+        <div class="line"></div>
+    </div>
+
     <div class="contact-container">
+
+        <!-- LEFT -->
         <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:shoaxlegacy@gmail.com">shoaxlegacy@gmail.com</a></p>
-            <p><strong>Phone:</strong> 068 467 4931 / 071 887 4933</p>
-            <p><strong>Socials:</strong> Homeboy Shoax</p>
+
+            <h3>Let's Build Something Great</h3>
+
+            <p>
+                Reach out to SHOAXLEGACY for professional
+                tech or supplier solutions.
+            </p>
+
+            <div class="info-box">
+                <span>📞</span>
+                <p>068 467 4931</p>
+            </div>
+
+            <div class="info-box">
+                <span>✉️</span>
+                <p>shoaxlegacy@gmail.com</p>
+            </div>
+
+            <div class="info-box">
+                <span>🌐</span>
+                <p>Website Coming Soon</p>
+            </div>
+
         </div>
 
-        <form id="contactForm" action="https://formspree.io/f/meeqawyq" method="POST">
+        <!-- RIGHT -->
+        <form
+            id="contactForm"
+            action="https://formspree.io/f/meeqawyq"
+            method="POST"
+            class="contact-form"
+        >
+
             <div class="form-group">
-                <label>Your Email:</label>
-                <input type="email" name="email" placeholder="email@example.com" required>
+                <label>Full Name</label>
+                <input type="text" name="name" required />
             </div>
-            
+
             <div class="form-group">
-                <label>Service Required:</label>
+                <label>Email Address</label>
+                <input type="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label>Service Required</label>
+
                 <select name="service">
-                    <option value="Trading Bot">Trading Robot (EA)</option>
-                    <option value="Web Design">Website Design</option>
-                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Tech Solutions">Tech Solutions</option>
+                    <option value="Supplier Solutions">Supplier Solutions</option>
                 </select>
             </div>
 
             <div class="form-group">
-                <label>Your Message:</label>
-                <textarea name="message" placeholder="Tell us about your project..." required></textarea>
+                <label>Your Message</label>
+
+                <textarea
+                    name="message"
+                    rows="5"
+                    placeholder="Tell us about your project..."
+                    required
+                ></textarea>
             </div>
 
-            <button type="submit" class="btn" id="submitBtn">Send Inquiry</button>
+            <button type="submit" class="btn primary-btn" id="submitBtn">
+                Send Inquiry
+            </button>
+
             <p id="formStatus"></p>
+
         </form>
+
     </div>
+
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer>
-    <p>&copy; 2025 SHOAXLEGACY (PTY) LTD. All Rights Reserved.</p>
-    <p style="font-size: 0.8rem; margin-top: 10px; opacity: 0.5;">Trading involves risk. SHOAXLEGACY is not liable for losses.</p>
+
+    <h3>SHOAXLEGACY</h3>
+
+    <p>
+        Smart Tech & Supplier Solutions
+    </p>
+
+    <p class="copyright">
+        © 2025 SHOAXLEGACY (PTY) LTD. All Rights Reserved.
+    </p>
+
 </footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
